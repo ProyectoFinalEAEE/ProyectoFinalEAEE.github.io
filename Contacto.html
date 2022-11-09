@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="index/Style.css">
+    <link rel="stylesheet"  type="text/css" href="Contacto/Style.css">
+    <link rel="stylesheet"  type="text/css" href="font.css">
+    <link rel="icon" href="index/img/LogoPestaña.png">
+    <title>E.A.E.E.</title>
+</head>
+<body>
+    <header >      
+        <div class="bar-nav">
+                    <a class="nav-link" href="index.html" target="_self">Inicio</a>
+                    <a class="nav-link" href="staff.html" target="_self">Staff</a>
+                    <a class="nav-link select" href="#inicio" >Contacto</a>
+                    <a class="nav-link" href="informacion.html" target="_self">Informacion</a>
+        </div>
+           
+      
+    </header>
+    <div class="contain-uno">
+            <div class="redesSociales">
+                <a href="https://www.facebook.com/" class="icon icon-facebook" target="_blank"></a>
+                <a href="https://www.youtube.com/" class="icon icon-youtube" target="_blank"></a>
+                <a href="https://twitter.com/" class="icon icon-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="icon icon-instagram" target="_blank"></a> 
+            </div>
+            <form name="myform" action="#" method="get" class="formulario">
+                <h1 class="formulario-titulo">Contactanos!</h1>
+
+                <input type="text" name="nbre"class="formulario-input" autocomplete="off">
+                <label for="" class="formulario-label">Nombre</span></label>
+
+                <input type="text"  name="apellido" class="formulario-input" autocomplete="off">
+                <label for="" class="formulario-label">Apellido</span></label>
+
+                <input type="text" id="email" name="email"class="formulario-input" autocomplete="off">
+                <label for="" class="formulario-label">Email</label>
+
+                <input type="text" name="comentario" class="formulario-input" autocomplete="off" value="">
+                <label for="" class="formulario-label">Mensaje</label>
+
+                <input type="submit" value="Enviar Mensaje" class="formulario-submit" onclick="return Validacion();">
+                
+            </form>
+        </div>  
+            <script src="Contacto/form.js" ></script>
+    <footer>
+        <div class="derechos">
+                © 2022 Todos los derechos resevados a Mariela Dadan
+        </div>
+    </footer>
+</body>
+</html>

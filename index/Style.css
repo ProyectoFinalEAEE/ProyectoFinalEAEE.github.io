@@ -1,0 +1,254 @@
+*{
+    margin: 0 ;
+    border: 0;
+    font-size: 100%;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f3f3f3;
+}
+a{
+    text-decoration: none;
+}
+/*Barra de navegacion*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    margin: 0;
+    background-color: #c01212;
+    z-index: 20;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+.logo a img{
+    height: 100px;
+    width: 100px;
+}
+.header-title{
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(250, 242, 129);
+}
+.bar-nav{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.nav-link{
+    font-size: 10px;
+    margin: 0 10px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.bar-nav label:hover{
+    color: #9C0001;
+    cursor: pointer;
+}
+.select{
+    position: relative;
+    padding: 10px 0;
+}
+.select::before{
+    content: "";
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    position: absolute;
+    border-radius: 5px;
+    border-bottom: 2px solid #fff;
+    bottom: 0;
+}
+@media (min-width:1000px){
+    .logo a img{
+        height: 150px;
+        width: 150px;
+    }
+    .header-title{
+        font-size: 40px; 
+    }
+    .nav-link{
+        font-size: 15px;
+        margin: 0 20px;
+    }
+    .logo{
+        margin-bottom: -40px
+    }
+    } 
+
+/*Section objetivos y destinatario*/
+.section-objetivos-destinatario{
+    width: 100%;
+    padding: 20px;
+}
+.section-objetivos,.section-destinatario{
+    position: relative;
+    margin: 10px;
+    margin:40px 20px;
+   
+}
+.section-objetivos-title,.section-destinatario-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:30px;
+    font-weight: 900;
+    color: rgb(140, 0, 255);
+    margin: 10px;
+    text-align: left;
+}
+.section-objetivos-list,.section-destinatario-list{
+    text-align: left;
+    padding-left: 30px;
+}
+.section-objetivos-list p,.section-destinatario-list p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color: rgba(40, 40, 40, 0.836);
+    margin-bottom: 15px;
+}
+.section-objetivos-list .color1,.section-destinatario-list .color1{
+    border-radius: 70%;
+    font-size: 10px;
+    left: 1%;
+    position: absolute;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 5px;
+    width: 20px;
+    margin-bottom: 30px;
+    background-color: rgb(140, 0, 255);
+    text-align: center;
+}
+.section-destinatario-title{
+    color: coral;
+}
+.section-destinatario-list .color1{
+    background-color: coral;
+}
+@media (min-width:1000px){
+    .section-objetivos-destinatario{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .section-objetivos,.section-destinatario{
+        width: 500px;
+        margin: 40px 80px;
+    }
+    .section-objetivos-title,.section-destinatario-title{
+        font-size: 50px;
+    }
+    .section-objetivos-list,.section-destinatario-list{
+        padding: 40px;
+    }
+    .section-objetivos-list p,.section-destinatario-list p{
+        font-size: 18px;
+    }
+    .section-objetivos-list .color1,.section-destinatario-list .color1{
+        font-size: 15px;
+        width: 30px;
+    }
+}
+
+/*Section Metodologia*/
+.section-metodologia{
+    padding: 20px;
+    display: block;
+}
+.section-metodologia-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #293250;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.section-metodologia-contain{
+    display: block;
+}
+.section-metodologia-contain p{
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    height: 210px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 80%;
+    font-weight: 900;
+    color: rgba(40, 40, 40, 0.836);
+}
+@media (min-width:1000px){
+    .section-metodologia{
+        margin: 40px auto;
+    }
+    .section-metodologia-title{
+        font-size: 60px;
+    }
+    .section-metodologia-contain{
+        display: flex;
+    }
+    .section-metodologia-contain p{
+        font-size: 100%; 
+        height: 300px;
+        padding: 70px;
+    }
+}
+/*Section justificacion*/
+.section-justificacion{
+    display: block;
+    margin: 40px 20px;
+    padding: 10px;
+    text-align: center;
+}
+.section-justificacion-title{
+    font-family: 'Alegreya';
+    font-size:40px;
+    font-weight: 900;
+    color: rgba(247, 103, 175,0.8);
+    margin: 10px ;
+    margin-bottom: 30px;
+}
+.section-justificacion-cont{
+    font-family: 'Alegreya';
+    font-size: 14px;
+    font-weight: 900;
+    color: rgba(60, 60, 60, 0.836);
+}
+@media (min-width:1000px){
+    .section-justificacion{
+        width: 700px;
+        padding: 20px;
+        margin:40px auto;
+    }
+    .section-justificacion-title{
+        font-size:60px;
+    }
+    .section-justificacion-cont{
+        font-size: 20px;
+    }
+}
+/*Footer*/
+footer{
+    height: 20px;
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+        

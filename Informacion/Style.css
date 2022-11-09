@@ -1,0 +1,140 @@
+*{
+    margin: 0 ;
+    border: 0;
+    font-size: 100%;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+.titulo{
+    margin: 20px;
+    font-family: 'Alegreya';
+    font-weight: 900;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+/*section algo de informacion*/
+.section-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.section-info-title{
+    display: flex;
+    justify-self: flex-start;
+    font-family: 'Alegreya';
+    font-weight: 900;
+    font-size: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(114, 114, 231);
+    margin: 10px;
+} 
+.section-info-frase{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgba(70, 70, 70, 0.836);
+}
+.section-info-tarjetas{
+    margin: 40px auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.tarjeta,.tarjeta-shadow{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    
+}
+.tarjeta{ 
+   position: absolute;
+   width: 200px;
+   padding: 20px;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+.tarjeta-shadow{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s;
+    position: relative;
+    margin-bottom: 20px;
+}
+.tarjeta-link{
+    color: transparent;
+}
+.tarjeta-shadow:hover{
+   background-color:  rgba(255, 255, 255, 0.7);
+}
+.tarjeta-shadow:hover .tarjeta-link{
+    background-color: rgb(114, 114, 231);
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Alegreya';
+    transition: all 0.5s;
+}
+.tarjeta-shadow:hover .tarjeta-link:hover{
+    color:rgb(114, 114, 231);
+    border: 1px solid rgb(114, 114, 231);
+    background-color: #fff;
+    text-decoration: underline;
+}
+.tarjeta-title{
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: 'Alegreya', serif;
+    padding: 0 10px 10px 10x;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+}
+.tarjeta-conten{
+    font-size: 15px;
+    font-weight: 600px;
+    font-family: 'Alegreya', serif;
+    padding: 10px;
+    color:rgba(255, 255, 255, 0.9);
+}
+@media(min-width:1000px){
+    .titulo{
+        font-size: 30px;
+    }
+    .section-info{
+        align-items: center;
+        justify-content: center;
+    }
+    .section-info-title{
+        font-size: 60px;width: 450px;
+    } 
+    .section-info-frase{
+        font-size: 20px;
+    }
+    .section-info-total{
+        display: flex;
+        flex-direction: row;
+        margin: 40px 60px;
+        overflow: hidden;
+    }
+    
+    .section-info-tarjetas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .section-info-tarjetas1,.section-info-tarjetas2{
+        display: flex;
+        flex-direction: row;
+    }
+    .tarjeta,.tarjeta-shadow{
+        margin: 20px;
+    }
+     .tarjeta{
+        position: relative;
+        margin-right: -17.9%;
+     }
+}
